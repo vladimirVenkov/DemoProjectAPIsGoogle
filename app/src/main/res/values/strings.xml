@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GoogleAPIsDemoTelerik</string>
+    <string name="open_map">Open Map</string>
 </resources>
