@@ -89,14 +89,14 @@ public class MapActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.READ_CONTACTS)
-                != PackageManager.PERMISSION_GRANTED) {
-
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.READ_CONTACTS}, 1);
-
-        }
+//        if (ContextCompat.checkSelfPermission(this,
+//                Manifest.permission.READ_CONTACTS)
+//                != PackageManager.PERMISSION_GRANTED) {
+//
+//            ActivityCompat.requestPermissions(this,
+//                    new String[]{Manifest.permission.READ_CONTACTS}, 1);
+//
+//        }
 
         if (resultCode == Activity.RESULT_OK) {
             Uri contactData = data.getData();
@@ -140,7 +140,7 @@ public class MapActivity extends AppCompatActivity {
 //                Log.d("curs", name + " num" + phoneNumber + " " + "mail" + emailAddress);
 
                 // --- new stuff from here ---
-                String toS = emailAddress;
+                String[] toS = {emailAddress};
                 String subS = "Dear, " + name + "Check our Super Awesome Store on following Address " +
                         "(and remember to bring some serious Cash!";
                 String mesS = "Latitude: " + LATITUDE + "\nLongitude: " + LONGITUDE;

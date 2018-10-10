@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -15,8 +16,11 @@ import butterknife.OnClick;
 
 public class MainActivity extends Activity {
 
-    @BindView(R.id.btn_open_map)
-    Button btnOpenMap;
+//    @BindView(R.id.btn_open_map)
+//    Button btnOpenMap;
+
+    @BindView(R.id.img_mainpic)
+    ImageView imgOpenMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +39,7 @@ public class MainActivity extends Activity {
         }
     }
 
-    @OnClick(R.id.btn_open_map)
+    @OnClick(R.id.img_mainpic)
     public void openMapClick() {
             Intent viewMap = new Intent(MainActivity.this, MapActivity.class);
             startActivity(viewMap);
