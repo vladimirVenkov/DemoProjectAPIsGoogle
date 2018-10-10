@@ -141,9 +141,9 @@ public class MapActivity extends AppCompatActivity {
 
                 // --- new stuff from here ---
                 String[] toS = {emailAddress};
-                String subS = "Dear, " + name + "Check our Super Awesome Store on following Address " +
-                        "(and remember to bring some serious Cash!";
-                String mesS = "Latitude: " + LATITUDE + "\nLongitude: " + LONGITUDE;
+                String subS = "Extra Fine Location" ;
+                String mesS = "Dear, " + name + ",\nCheck our Super Awesome Store on following Address " +
+                        "(and remember to bring some serious Cash!" + "\nLatitude: " + LATITUDE + "\nLongitude: " + LONGITUDE;
 
                 Toast.makeText(this,subS, Toast.LENGTH_LONG).show();
 
